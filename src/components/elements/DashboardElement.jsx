@@ -11,7 +11,7 @@ export default function DashboardElement() {
 
     return(
         
-        <div className="bg-[#2B2E63] h-screen w-[390px] flex flex-col">
+        <div className="bg-[#2B2E63] h-screen w-[390px] flex flex-col" font-custom>
 
             <div className=" text-white text-[30px] mx-auto" style={{marginTop:'25px'}}>
                 <p>Dashboard</p>

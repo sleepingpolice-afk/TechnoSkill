@@ -6,7 +6,7 @@ export default function MyInfoPage() {
     const [name, setName] = useState("");
 
     return(
-        <div className="bg-[#CEC1DA] h-screen w-screen-flex flex">
+        <div className="bg-[#CEC1DA] h-screen w-screen-flex flex" font-body>
             <DashboardElement />
 
             <div className="bg-[#2B2E63] w-[449px] h-[564px] m-auto rounded-2xl text-white">

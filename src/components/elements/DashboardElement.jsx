@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import homeIcon from "../../assets/home.svg";
 import employeeIcon from "../../assets/employee.svg";
 import loginIcon from "../../assets/login.svg";
-import myinfo from "../../assets/myinfo.svg"
+import logoutIcon from "../../assets/register.svg";
+import myinfo from "../../assets/myinfo.svg";
 
 export default function DashboardElement() {
    const navigate = useNavigate();
@@ -30,19 +31,23 @@ export default function DashboardElement() {
                 </p>
             </div>
 
-            <div className="flex ml-5 mt-5" onClick={() => navigate("/login")} style={{cursor:'pointer'}}>
-                <img src={ loginIcon }  />
-                <p className="my-auto text-white ml-5 text-[20px]">
-                    Login
-                </p>
-            </div>
-
             <div className="flex ml-5 mt-5" onClick={() => navigate("/my-info")} style={{cursor:'pointer'}}>
                 <img src={ myinfo }  />
                 <p className="my-auto text-white ml-5 text-[20px]">
                     My Info
                 </p>
             </div>
+
+
+            <div className="mt-auto">
+                <table>
+                    <tr>
+                        <td><img src={ loginIcon }  className="pl-6 pb-3" onClick={() => navigate("/login")} style={{cursor:'pointer'}} /></td>
+                        <td><img src={ logoutIcon }  className="pl-44 pr-0" onClick={() => navigate("/login")} style={{cursor:'pointer'}} /></td>
+                        </tr> {/* change /login later for logout */}
+                </table>
+            </div>
+        
         </div>
     )
 } 
